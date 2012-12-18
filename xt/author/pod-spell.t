@@ -19,6 +19,7 @@ Str
 TaskWeaver
 UploadToCPAN
 dist.ini
+dzil
 hartzell's
 George
 Hartzell

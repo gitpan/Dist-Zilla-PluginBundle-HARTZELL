@@ -3,10 +3,10 @@ use strict;
 use warnings;
 package Dist::Zilla::PluginBundle::HARTZELL;
 {
-  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.004';
+  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.005';
 }
 
-# ABSTRACT: Implement hartzell's way.
+# ABSTRACT: My standard dzil config.
 
 
 use autodie 2.00;
@@ -251,11 +251,11 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::PluginBundle::HARTZELL - Implement hartzell's way.
+Dist::Zilla::PluginBundle::HARTZELL - My standard dzil config.
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

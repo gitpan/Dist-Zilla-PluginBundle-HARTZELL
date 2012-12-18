@@ -1,10 +1,10 @@
 {
-   "abstract" : "Implement hartzell's way.",
+   "abstract" : "My standard dzil config.",
    "author" : [
       "George Hartzell <hartzell@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -101,6 +101,12 @@
          }
       },
       "test" : {
+         "recommends" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Meta" : "0",
+            "Test::Perl::Critic" : "0",
+            "Test::Pod::Coverage" : "0"
+         },
          "requires" : {
             "File::Find" : "0",
             "File::Temp" : "0",
@@ -111,7 +117,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::HARTZELL" : {
          "file" : "lib/Dist/Zilla/PluginBundle/HARTZELL.pm",
-         "version" : "0.004"
+         "version" : "0.005"
       }
    },
    "release_status" : "stable",
@@ -126,6 +132,6 @@
          "web" : "https://github.com/hartzell/dist-zilla-pluginbundle-hartzell"
       }
    },
-   "version" : "0.004"
+   "version" : "0.005"
 }
 

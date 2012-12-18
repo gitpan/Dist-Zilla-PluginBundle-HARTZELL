@@ -1,8 +1,8 @@
 NAME
-    Dist::Zilla::PluginBundle::HARTZELL - Implement hartzell's way.
+    Dist::Zilla::PluginBundle::HARTZELL - My standard dzil config.
 
 VERSION
-    version 0.004
+    version 0.005
 
 SYNOPSIS
        # in dist.ini

@@ -15,12 +15,12 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "Implement hartzell's way.",
+  "dist_abstract" => "My standard dzil config.",
   "dist_author" => [
     "George Hartzell <hartzell\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-HARTZELL",
-  "dist_version" => "0.004",
+  "dist_version" => "0.005",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::HARTZELL",
   "recommends" => {},
