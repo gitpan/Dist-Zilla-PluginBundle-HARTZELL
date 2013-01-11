@@ -4,7 +4,7 @@
       "George Hartzell <hartzell@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -117,7 +117,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::HARTZELL" : {
          "file" : "lib/Dist/Zilla/PluginBundle/HARTZELL.pm",
-         "version" : "0.005"
+         "version" : "0.006"
       }
    },
    "release_status" : "stable",
@@ -132,6 +132,6 @@
          "web" : "https://github.com/hartzell/dist-zilla-pluginbundle-hartzell"
       }
    },
-   "version" : "0.005"
+   "version" : "0.006"
 }
 

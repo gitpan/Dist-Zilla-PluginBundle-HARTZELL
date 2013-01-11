@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package Dist::Zilla::PluginBundle::HARTZELL;
 {
-  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.005';
+  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.006';
 }
 
 # ABSTRACT: My standard dzil config.
@@ -15,8 +15,8 @@ use namespace::autoclean 0.09;
 
 use Dist::Zilla 4.3; # authordeps
 
-with 'Dist::Zilla::Role::PluginBundle::Easy';
-with 'Dist::Zilla::Role::PluginBundle::Config::Slicer';
+with qw(Dist::Zilla::Role::PluginBundle::Easy
+        Dist::Zilla::Role::PluginBundle::Config::Slicer);
 
 
 sub mvp_multivalue_args { qw/stopwords/ }
@@ -255,7 +255,7 @@ Dist::Zilla::PluginBundle::HARTZELL - My standard dzil config.
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
@@ -571,7 +571,7 @@ George Hartzell <hartzell@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by George Hartzell.
+This software is copyright (c) 2013 by George Hartzell.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
