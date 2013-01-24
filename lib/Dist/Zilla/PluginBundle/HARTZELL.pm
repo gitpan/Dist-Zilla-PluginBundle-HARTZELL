@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package Dist::Zilla::PluginBundle::HARTZELL;
 {
-  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.006';
+  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.007';
 }
 
 # ABSTRACT: My standard dzil config.
@@ -104,7 +104,7 @@ has weaver_config => (
   is      => 'ro',
   isa     => 'Str',
   lazy    => 1,
-  default => sub { $_[0]->payload->{weaver_config} || '@Default' },
+  default => sub { $_[0]->payload->{weaver_config} || '@HARTZELL' },
 );
 
 
@@ -255,7 +255,7 @@ Dist::Zilla::PluginBundle::HARTZELL - My standard dzil config.
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 SYNOPSIS
 
@@ -295,7 +295,7 @@ dist.ini:
    ; file modifications
    [PkgVersion]        ; add $VERSION = ... to all files
    [PodWeaver]         ; generate Pod
-   config_plugin = @DEFAULT
+   config_plugin = @HARTZELL
  
    ; generated files
    [ReadmeFromPod]     ; from Pod (runs after PodWeaver)
@@ -505,7 +505,7 @@ to set it to something other than the default.
 =head2 weaver_config
 
 Moose Str attribute, controls the name of the PodWeaver configuration.
-Defaults to '@Default', controlled by the value of the 'weaver_config'
+Defaults to '@HARTZELL', controlled by the value of the 'weaver_config'
 dist.ini option.
 
 Do this:
@@ -565,9 +565,19 @@ L<Dist::Zilla::PluginBundle::ConfigSlicer>
 
 =back
 
-=head1 AUTHOR
+=head1 AUTHORS
+
+=over 4
+
+=item *
 
 George Hartzell <hartzell@cpan.org>
+
+=item *
+
+David Golden <dagolden@cpan.org>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 

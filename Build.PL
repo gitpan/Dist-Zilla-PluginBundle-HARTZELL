@@ -17,10 +17,11 @@ my %module_build_args = (
   },
   "dist_abstract" => "My standard dzil config.",
   "dist_author" => [
-    "George Hartzell <hartzell\@cpan.org>"
+    "George Hartzell <hartzell\@cpan.org>",
+    "David Golden <dagolden\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-HARTZELL",
-  "dist_version" => "0.006",
+  "dist_version" => "0.007",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::HARTZELL",
   "recommends" => {},
@@ -74,6 +75,8 @@ my %module_build_args = (
     "Dist::Zilla::Role::PluginBundle::Config::Slicer" => 0,
     "Dist::Zilla::Role::PluginBundle::Easy" => 0,
     "Moose" => "0.99",
+    "Pod::Elemental::Transformer::List" => "0.101620",
+    "Pod::Weaver::Config::Assembler" => 0,
     "autodie" => "2.00",
     "namespace::autoclean" => "0.09",
     "perl" => "5.006",
