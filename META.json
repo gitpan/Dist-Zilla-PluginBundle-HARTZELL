@@ -120,11 +120,11 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::HARTZELL" : {
          "file" : "lib/Dist/Zilla/PluginBundle/HARTZELL.pm",
-         "version" : "0.007"
+         "version" : "0.008"
       },
       "Pod::Weaver::PluginBundle::HARTZELL" : {
          "file" : "lib/Pod/Weaver/PluginBundle/HARTZELL.pm",
-         "version" : "0.007"
+         "version" : "0.008"
       }
    },
    "release_status" : "stable",
@@ -139,6 +139,6 @@
          "web" : "https://github.com/hartzell/dist-zilla-pluginbundle-hartzell"
       }
    },
-   "version" : "0.007"
+   "version" : "0.008"
 }
 

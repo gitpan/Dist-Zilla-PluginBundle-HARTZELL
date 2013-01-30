@@ -21,7 +21,7 @@ my %module_build_args = (
     "David Golden <dagolden\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-HARTZELL",
-  "dist_version" => "0.007",
+  "dist_version" => "0.008",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::HARTZELL",
   "recommends" => {},

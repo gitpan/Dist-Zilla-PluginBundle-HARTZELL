@@ -3,7 +3,7 @@ use warnings;
 
 package Pod::Weaver::PluginBundle::HARTZELL;
 {
-  $Pod::Weaver::PluginBundle::HARTZELL::VERSION = '0.007';
+  $Pod::Weaver::PluginBundle::HARTZELL::VERSION = '0.008';
 }
 
 # ABSTRACT: HARTZELL's default Pod::Weaver config
@@ -43,10 +43,11 @@ sub mvp_bundle_config {
     );
 
     for my $plugin (
-        [ 'Attributes', _exp('Collect'), { command => 'attr' } ],
-        [ 'Methods',    _exp('Collect'), { command => 'method' } ],
-        [ 'Functions',  _exp('Collect'), { command => 'func' } ],
-        [ 'Requires',   _exp('Collect'), { command => 'requires' } ],
+        [ 'Attributes',     _exp('Collect'), { command => 'attr' } ],
+        [ 'Methods',        _exp('Collect'), { command => 'method' } ],
+        [ 'Functions',      _exp('Collect'), { command => 'func' } ],
+        [ 'Requires',       _exp('Collect'), { command => 'requires' } ],
+        [ 'Roles Consumed', _exp('Collect'), { command => 'with' } ],
         )
     {
         $plugin->[2]{header} = uc $plugin->[0];
@@ -91,7 +92,7 @@ Pod::Weaver::PluginBundle::HARTZELL - HARTZELL's default Pod::Weaver config
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 DESCRIPTION
 

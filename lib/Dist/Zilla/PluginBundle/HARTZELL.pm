@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package Dist::Zilla::PluginBundle::HARTZELL;
 {
-  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.007';
+  $Dist::Zilla::PluginBundle::HARTZELL::VERSION = '0.008';
 }
 
 # ABSTRACT: My standard dzil config.
@@ -255,7 +255,7 @@ Dist::Zilla::PluginBundle::HARTZELL - My standard dzil config.
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 SYNOPSIS
 

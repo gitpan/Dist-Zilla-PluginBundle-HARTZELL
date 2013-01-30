@@ -28,10 +28,10 @@ no_index:
 provides:
   Dist::Zilla::PluginBundle::HARTZELL:
     file: lib/Dist/Zilla/PluginBundle/HARTZELL.pm
-    version: 0.007
+    version: 0.008
   Pod::Weaver::PluginBundle::HARTZELL:
     file: lib/Pod/Weaver/PluginBundle/HARTZELL.pm
-    version: 0.007
+    version: 0.008
 requires:
   Dist::Zilla: 4.3
   Dist::Zilla::Plugin::AutoMetaResources: 0
@@ -92,4 +92,4 @@ resources:
   bugtracker: https://github.com/hartzell/dist-zilla-pluginbundle-hartzell/issues
   homepage: https://metacpan.org/release/Dist-Zilla-PluginBundle-HARTZELL
   repository: git://github.com/hartzell/dist-zilla-pluginbundle-hartzell.git
-version: 0.007
+version: 0.008
